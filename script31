@@ -1,0 +1,14 @@
+#!/bin/bash 
+
+echo $0
+echo $1 
+echo $2
+echo $3 
+
+#____________
+
+echo "this is parameter 1 $1"
+echo "this is parameter2 $2"
+summ=$[ $1 + $2 ]
+echo "and this is a summ of them $summ" 
+  

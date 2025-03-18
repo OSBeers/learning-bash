@@ -1,0 +1,23 @@
+#!/bin/bash 
+while [ -n $1 ]
+do 
+case "$1" in 
+-a) echo "this is an a option"
+	break;;
+-b) echo "this is a b option"
+	break;;
+-c) echo "this is a c option"
+	break;;
+*) echo "this ($1) is not an option"
+	break;;
+esac 
+done
+
+
+count=1
+for param in "$@"
+do 
+echo "this is a #$count param =$param"
+count=$((  $count +1 ))
+done 
+

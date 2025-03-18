@@ -1,0 +1,12 @@
+#!/usr/bin/expect -f 
+
+set timeout -1 
+
+spawn ./new_qestions 
+
+expect {
+	"*topic\r" { send -- "topic\r"}
+	"*movie\r" { send -- "movie\r"}
+}
+
+expect eof

@@ -1,0 +1,17 @@
+#!/bin/bash 
+
+#тестируем if else 
+
+#user=osbeers
+user=another 
+
+if grep $user /etc/passwd
+then 
+echo "User: $user exists"
+else 
+echo "User: $user does not exist"
+fi 
+
+# в конце ставим fi 
+
+

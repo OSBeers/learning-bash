@@ -1,0 +1,14 @@
+#!/usr/bin/expect -f 
+set timeout -1
+
+set my_name [lindex $argv 0]
+set favourite [lindex $argv 1]
+ 
+spawn ./questions 
+expect "Hello, who are you?\r"
+send -- "$my_name\r"
+expect "Can I ask you some questions?\r"
+send -- "Sure\r"
+expect "What is your favourite topic?\r"
+send -- "$favourite\r"
+expect eof

@@ -1,0 +1,23 @@
+#!/bin/bash
+
+read -p "input a value: "  input
+
+users=$(cat /etc/passwd | sed $input\q $users | awk -F ":" '{print $1}')
+
+echo "$users"
+
+# sed $input\q $users делает тоже что и все что снизу 
+
+#counter=0
+
+#for name in $users
+#do 
+#echo "$name"
+#if [ $counter -eq 19 ]
+#then 
+#break
+#fi
+#counter=$(( $counter +1 )) 
+#done
+
+ 

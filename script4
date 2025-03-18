@@ -1,0 +1,13 @@
+#!/bin/bash 
+
+# output commands into variables 
+
+#like this 
+
+var1=`whoami`
+
+#and this 
+
+var2=$(whoami)
+
+echo "var1 $var1 & var2 $var2"

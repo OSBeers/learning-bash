@@ -1,0 +1,13 @@
+#!/bin/bash 
+
+let number=$RANDOM 
+if [ $number -ge 25000 ]
+then 
+echo "what is topic"
+else
+echo "whats movie"
+fi 
+
+read $REPLY 
+
+

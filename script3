@@ -1,0 +1,6 @@
+#!/bin/bash 
+# variables 
+grade=5
+name="Adam" 
+
+echo "$name is a 2nd variable, is in a 1st varaible ($grade) class"

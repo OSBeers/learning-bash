@@ -1,0 +1,19 @@
+#!/bin/bash 
+
+function foo {
+	read -p "enter a value " val
+	echo $(( $val + 10))
+}
+
+result=$( foo)
+echo "the value is $result"
+
+
+function getarray {
+local new_array=("$@") 
+echo "array inside a function: ${new_array[*]}"
+}
+
+orig_array=(1 2 3 4 5 6 7 8)
+echo "the original array is: ${orig_array[*]}"
+getarray ${orig_array[*]}

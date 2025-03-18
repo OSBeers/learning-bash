@@ -1,0 +1,55 @@
+#!/bin/bash 
+
+#testing loops
+
+for (( i = 0; i<10; i++ )) 
+do 
+if [ $i -ge 5 ] && [ $i -lt 8 ]
+then 
+continue 
+fi
+echo "test1 iteration #: $i"
+done 
+
+
+echo -e "\n_________________________________"
+#test 2 
+
+for var in 1 2 3 4 5 6 7 8 9 10
+do 
+if [ $var -ge 5 ]
+then 
+break 
+fi 
+echo -e "test2 iteration #: $var"
+done  
+
+#test3 
+echo -e "\n_________________________________"
+
+
+IFS=$'\n' #IFS - delimeter in a file 
+
+for entry in $(cat /etc/passwd | head)
+do 
+echo "test3 entry: $entry"
+IFS=:
+for value in $entry 
+do 
+echo "test3 inner loop value in entry: $value"
+done 
+done 
+
+#test4  
+echo -e "\n_________________________________"
+
+var2=1
+while [ $var2 -lt 10 ]
+do 
+if [ $var2 -eq 5 ]
+then 
+break
+fi 
+echo "test4 var = $var2"
+var2=$(( $var2+1 ))
+done 

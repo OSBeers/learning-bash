@@ -1,0 +1,12 @@
+#!/bin/bash 
+
+#testing comparisons
+val1=5
+
+if [ $val1 -ge 5 ]
+then 
+echo "$val1 >= 5"
+else 
+echo "$val1 < 5"
+fi 
+

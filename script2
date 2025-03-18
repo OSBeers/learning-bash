@@ -1,0 +1,7 @@
+#!/bin/bash 
+#learning to use a variables
+echo "Home directory is : $HOME"
+#$HOME is a variable 
+#выводим $
+
+echo "Ihave a 1\$ in my pocket"

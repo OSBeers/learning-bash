@@ -1,0 +1,14 @@
+#!/bin/bash 
+echo -e "enter your name ... \n"
+read name 
+echo "hello $name welcome to my program"
+
+
+read -p "enter your name again" first last 
+echo "your first name is $first and your last name id $last"
+
+read -p "and again"
+echo "you name is $REPLY"
+
+read -s -p "now trying sercret input" password
+echo "($password) <- this is your secret input"

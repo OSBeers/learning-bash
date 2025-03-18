@@ -1,0 +1,16 @@
+#!/bin/bash 
+
+# testing elif 
+
+user=user 
+
+if grep $user /etc/passwd 
+then 
+echo "user $user exists"
+elif ls
+then 
+echo "heres a directory u currently in:"
+fi
+ 
+
+
