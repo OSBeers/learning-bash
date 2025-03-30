@@ -8,7 +8,7 @@ echo "Hello to weather watcher"
 read -p "enter a location -> "
 weather_output=$(curl -s "wttr.in/$REPLY")
 
-#redacting output
+#redacting output still dont know why it does not work 
 #weather_output=$( sed '$d' $weather_output)
 
 
