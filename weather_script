@@ -1,0 +1,18 @@
+#!/bin/bash
+
+key="6a2ab7caddb74f87aff192154253003"
+
+#getting weather
+echo "Hello to weather watcher"
+
+read -p "enter a location -> "
+weather_output=$(curl -s "wttr.in/$REPLY")
+
+#redacting output
+#weather_output=$( sed '$d' $weather_output)
+
+
+#weather_output=$(GET  http://api.weatherapi.com/v1/current.json?key=$key/&q=Moscow&aqi=no)
+echo "$weather_output" 
+
+
